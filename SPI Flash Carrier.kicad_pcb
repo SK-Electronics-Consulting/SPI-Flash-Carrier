@@ -42,7 +42,7 @@
     )
     (pad_to_mask_clearance 0)
     (pcbplotparams
-      (layerselection 0x00010fc_ffffffff)
+      (layerselection 0x00010f0_ffffffff)
       (plot_on_all_layers_selection 0x0000000_00000000)
       (disableapertmacros false)
       (usegerberextensions false)
@@ -71,9 +71,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "")
+      (outputdirectory "./gerbers")
     )
   )
 
@@ -91,7 +91,7 @@
   (net 11 "/RESET")
   (net 12 "Net-(JP1-A)")
 
-  (footprint "MountingHole:MountingHole_2.7mm_M2.5" (layer "F.Cu")
+  (footprint "MountingHole:MountingHole_2.7mm_M2.5" locked (layer "F.Cu")
     (tstamp 07bd9cd4-1854-4ef8-a903-b0d0e3547fe5)
     (at 72 53)
     (descr "Mounting Hole 2.7mm, no annular, M2.5")
@@ -101,11 +101,11 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4e39f0f4-b24c-4ad6-bc0f-15cc035ee22f)
     )
-    (fp_text value "MountingHole_2.7mm_M2.5" (at 0 3.7) (layer "F.Fab")
+    (fp_text value "MountingHole_2.7mm_M2.5" (at 0 3.7) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp be9e3631-5804-4672-9977-fdbc29b8eddc)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4a4993ad-f00b-4ee0-874b-67d91272c9ed)
     )
@@ -113,7 +113,7 @@
       (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp a76b6817-745b-4d03-b856-cde5ab4d816d))
     (fp_circle (center 0 0) (end 2.95 0)
       (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp a4a265d3-6541-4792-8adf-079aecc4c39d))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers "*.Cu" "*.Mask") (tstamp 59b6d092-0ca3-4560-8112-2a840cf77d99))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 2.7 2.7) (drill 2.7) (layers "*.Cu" "*.Mask") (tstamp 59b6d092-0ca3-4560-8112-2a840cf77d99))
   )
 
   (footprint "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_RoundedPad1.0x1.5mm" (layer "F.Cu")
@@ -132,7 +132,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 044ac30d-7df9-4aee-85da-34f890ca1933)
     )
-    (fp_text value "Jumper_2_Bridged" (at 0 1.9 90) (layer "F.Fab")
+    (fp_text value "Jumper_2_Bridged" (at 0 1.9 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aa5d651a-c49a-4e8b-acf6-d6f7ed2514a2)
     )
@@ -301,7 +301,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 58228571-0233-4581-a5e1-e89a35722848)
     )
-    (fp_text value "W25Q16JLUXIG" (at 0 2.05) (layer "F.Fab")
+    (fp_text value "W25Q16JLUXIG" (at 0 2.05) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a1f50d96-7ed7-40a5-ad80-05a222112632)
     )
@@ -430,7 +430,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ca17ee31-3456-4d67-9b1e-6c5b9fcb615f)
     )
-    (fp_text value "LED_Small" (at 0 1.43 90) (layer "F.Fab")
+    (fp_text value "LED_Small" (at 0 1.43 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp baa443cd-5b61-479a-90ff-767f82ba2504)
     )
@@ -488,7 +488,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bcbe2dbd-7153-418a-aa11-baf2a48ad7f3)
     )
-    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cf0ff096-001a-4a0c-8792-20d65c9b0f81)
     )
@@ -543,7 +543,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 3d1d9cdb-89dd-45de-95e7-410f821b06ef)
     )
-    (fp_text value "Jumper_2_Bridged" (at 0 1.9 90) (layer "F.Fab")
+    (fp_text value "Jumper_2_Bridged" (at 0 1.9 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c37e5011-72d8-4e43-86e6-e137904fa5e6)
     )
@@ -636,7 +636,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ee2e4a23-9edf-4acc-9b10-5ff19342e879)
     )
-    (fp_text value "0.1u" (at 0 1.16) (layer "F.Fab")
+    (fp_text value "0.1u" (at 0 1.16) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ca53a3b6-422d-4c98-a378-ea4b02fb0aa2)
     )
@@ -690,7 +690,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0cc70b77-29eb-4229-a849-8519a2f4e439)
     )
-    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c6bed56b-077b-45c1-97f7-92500307c794)
     )
@@ -729,7 +729,7 @@
     )
   )
 
-  (footprint "MountingHole:MountingHole_2.7mm_M2.5" (layer "F.Cu")
+  (footprint "MountingHole:MountingHole_2.7mm_M2.5" locked (layer "F.Cu")
     (tstamp 91d38afc-0150-4cc9-9be9-f21067259529)
     (at 53 53)
     (descr "Mounting Hole 2.7mm, no annular, M2.5")
@@ -737,21 +737,21 @@
     (attr board_only exclude_from_pos_files exclude_from_bom)
     (fp_text reference "REF**" (at 0 -3.7) (layer "F.SilkS") hide
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 4e39f0f4-b24c-4ad6-bc0f-15cc035ee22f)
+      (tstamp 0ad4d645-7e79-468f-bf85-3951e612063b)
     )
-    (fp_text value "MountingHole_2.7mm_M2.5" (at 0 3.7) (layer "F.Fab")
+    (fp_text value "MountingHole_2.7mm_M2.5" (at 0 3.7) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp be9e3631-5804-4672-9977-fdbc29b8eddc)
+      (tstamp 3d6436a1-eeac-42b4-afdf-6f94ab9164fa)
     )
-    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab")
+    (fp_text user "${REFERENCE}" (at 0 0) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 4a4993ad-f00b-4ee0-874b-67d91272c9ed)
+      (tstamp ac16574b-5ec7-46b9-a6d0-f8f8030ce4b3)
     )
     (fp_circle (center 0 0) (end 2.7 0)
-      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp a76b6817-745b-4d03-b856-cde5ab4d816d))
+      (stroke (width 0.15) (type solid)) (fill none) (layer "Cmts.User") (tstamp ecde759d-6923-482b-87dd-082c7cfc7dd5))
     (fp_circle (center 0 0) (end 2.95 0)
-      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp a4a265d3-6541-4792-8adf-079aecc4c39d))
-    (pad "" np_thru_hole circle (at 0 0) (size 2.7 2.7) (drill 2.7) (layers "*.Cu" "*.Mask") (tstamp 59b6d092-0ca3-4560-8112-2a840cf77d99))
+      (stroke (width 0.05) (type solid)) (fill none) (layer "F.CrtYd") (tstamp 825db321-f738-45e4-af49-5bade92aa61f))
+    (pad "" np_thru_hole circle locked (at 0 0) (size 2.7 2.7) (drill 2.7) (layers "*.Cu" "*.Mask") (tstamp 9294e478-9818-4040-99f9-9556b58ae21d))
   )
 
   (footprint "Resistor_SMD:R_0402_1005Metric_Pad0.72x0.64mm_HandSolder" (layer "F.Cu")
@@ -769,7 +769,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e053769d-fbc7-49b2-aad8-9a891f64de6e)
     )
-    (fp_text value "4.7k" (at 0 1.17) (layer "F.Fab")
+    (fp_text value "4.7k" (at 0 1.17) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fccab995-e8cb-4862-8ccc-5f4257046800)
     )
@@ -825,7 +825,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 77ce213c-99e1-4864-aa6a-97b3096cddcb)
     )
-    (fp_text value "LED_Small" (at 0 1.43 90) (layer "F.Fab")
+    (fp_text value "LED_Small" (at 0 1.43 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 9c98d6cd-ed1b-4e07-8869-440ee8b5ade4)
     )
@@ -883,7 +883,7 @@
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d6ef249d-11d7-4f1d-95bf-aa3dc19e4658)
     )
-    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab")
+    (fp_text value "4.7k" (at 0 1.17 90) (layer "F.Fab") hide
         (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 33d9d938-40a8-4196-a61d-bdc2fd1fe2cd)
     )
